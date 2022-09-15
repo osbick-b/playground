@@ -1,22 +1,13 @@
+const hambContainer = document.querySelector("#hamburger-container");
+const hambMenu = document.querySelector("#hamburger-menu");
 
-    const hambContainer = document.querySelector("#hamburger-container");
-    const hambMenu = document.querySelector("#hamburger-menu");
+const hambBtnAll = document.querySelectorAll(".hamb-btn");
+hambBtnAll.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+        e.stopPropagation();
+        console.log("click");
+        hambContainer.classList.toggle("off");
+        hambContainer.classList.toggle("on");
+    });
+});
 
-
-function toggleHamb() {
-    console.log("click");
-    console.log(`hambMenu`, hambMenu);
-    hambContainer.classList.toggle("off");
-    // hambMenu.classList.toggle("off");
-    hambContainer.classList.toggle("on");
-    // hambMenu.classList.toggle("on");
-}
-
-// hambContainer.addEventListener("onclick", () => toggleHamb());
-
-// const btnHambClose = hambMenu.querySelector("button.close");
-// console.log(`btnHambClose`, btnHambClose);
-// btnHambClose.addEventListener(onclick, (e) => {
-    
-//     console.log("click!");
-// });
