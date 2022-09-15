@@ -1,13 +1,19 @@
 
+    const hambContainer = document.querySelector("#hamburger-container");
+    const hambMenu = document.querySelector("#hamburger-menu");
 
 
 function toggleHamb() {
     console.log("click");
-    const hambMenu = document.querySelector("#hamburger-menu");
     console.log(`hambMenu`, hambMenu);
-    hambMenu.classList.toggle("off");
-    hambMenu.classList.toggle("on");
+    hambContainer.classList.toggle("off");
+    // hambMenu.classList.toggle("off");
+    hambContainer.classList.toggle("on");
+    // hambMenu.classList.toggle("on");
 }
+
+// hambContainer.addEventListener("onclick", () => toggleHamb());
+
 // const btnHambClose = hambMenu.querySelector("button.close");
 // console.log(`btnHambClose`, btnHambClose);
 // btnHambClose.addEventListener(onclick, (e) => {

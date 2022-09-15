@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="playground.css">
-    <title>Hamburger Menu practice 1</title>
-</head>
-<body>
-    <header id="main-header">
-        <div>
-            <h1>NiceLogo</h1>
-        </div>
-        <button class="hamburger open" onclick="toggleHamb()">Menu</button>
-        <!-- ========== Hamburger Menu  =============-->
-        <section id="hamburger-menu" class="off">
-        <button class="hamburger close" onclick="toggleHamb()">X</button>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#About">About</a>
-            <a href="#Contact">Contact</a>
-        </nav>
-    </section>
-    </header>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="playground.css" />
+        <title>Hamburger Menu practice 1</title>
+    </head>
+    <body>
+        <header id="main-header">
+            <div>
+                <h1>NiceLogo</h1>
+            </div>
+            <button class="hamburger open" onclick="toggleHamb()">Menu</button>
+            <!-- <button class="hamburger open" onclick="toggleHamb()">Menu</button> -->
+            <!-- ========== Hamburger Menu  =============-->
+            <section id="hamburger-container" class="off" onclick="toggleHamb()">
+                <!-- <div id="hamburger-bg" onclick="toggleHamb()"></div> -->
+                <div id="hamburger-menu">
+                <!-- <div id="hamburger-menu" class="off"> -->
+                    <button class="hamburger close" onclick="toggleHamb()">
+                        X
+                    </button>
+                    <nav>
+                        <a href="#home">Home</a>
+                        <a href="#About">About</a>
+                        <a href="#Contact">Contact</a>
+                    </nav>
+                </div>
+            </section>
+        </header>
 
-    <main>
-        This is the main content of my website. Behold.
-        <div id="square"></div>
-    </main>
+        <main>
+            This is the main content of my website. Behold.
+            <div id="square"></div>
+        </main>
 
-    <footer>Copyright Me 2022</footer>
+        <footer>Copyright Me 2022</footer>
 
-    
-    <script src="playground.js"></script>
-</body>
+        <script src="playground.js"></script>
+    </body>
 </html>

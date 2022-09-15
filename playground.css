@@ -39,22 +39,46 @@ footer {
     background-color: pink;
 }
 
+#hamburger-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.6);
+    padding: 3vw;
+    /* overflow: hidden; */
+}
+
 #hamburger-menu {
     position: absolute;
     top: 0;
+    left: 0;
     width: 80vw;
     height: 100vh;
     background-color: orange;
     padding: 3vw;
+    transition: all 0.5s ease;
+
 }
 
-#hamburger-menu.on {
+
+
+/* #hamburger-container.on #hamburger-menu {
     left: 0;
     transition: all 0.5s ease;
+} */
+#hamburger-container.on {
+    left: 0;
+    /* transition: all 0.5s ease; */
 }
-#hamburger-menu.off {
+
+/* #hamburger-container.off #hamburger-menu {
     left: -80vw;
     transition: all 0.5s ease-in-out;
+} */
+#hamburger-container.off {
+    left: -100vw;
+    /* transition: all 0.5s ease-in-out; */
 }
 
 
